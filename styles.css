@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+	 background-image: url("image background.jpg"); /* Replace with your image path */
+     background-size: cover; /* Scale image to cover entire background */
+     background-position: center center; /* Center the image */
+     background-repeat: no-repeat; /* Prevent image repetition */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+/* Header Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Text Animation */
+.text-grow {
+    transform: scale(0.9);
+    animation: textGrow 2s ease-in-out forwards;
+}
+
+@keyframes textGrow {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Header Styling */
+header {
+    background-color: palevioletred;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+	font-weight: bold;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
+}
+
+/* Navigation Menu Styling */
+nav {
+    background-color: #1d3557;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 19px;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color:palegoldenrod;
+}
+
+/* Section Styling */
+section {
+    background-color: #C7DAE6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Section title styling */
+section h2 {
+    font-size: 2em;
+    color: #457b9d;
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif; /* Change this to your desired font */
+}
+
+
+/* Image Styling */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.circle-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #42a5f5;
+    object-fit: cover;
+	animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    background-color: #1d3557;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+

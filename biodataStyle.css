@@ -1,0 +1,165 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+	background-image: url("image background.jpg"); /* Replace with your image path */
+     background-size: cover; /* Scale image to cover entire background */
+     background-position: center center; /* Center the image */
+     background-repeat: no-repeat; /* Prevent image repetition */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Text color */
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Text Animation */
+.text-grow {
+    transform: scale(0.9);
+    animation: textGrow 2s ease-in-out forwards;
+}
+
+@keyframes textGrow {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Header Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Header styling */
+header {
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5em;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
+}
+
+/* Navigation styling */
+nav {
+    background-color: #1d3557;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 19px;
+    width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+
+}
+
+nav a:hover {
+    color: palegoldenrod;
+}
+
+/* Main section styling */
+section {
+    background-color: #C7DAE6; /* White background for biodata content */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Section title styling */
+section h2 {
+    font-size: 2em;
+    color: #457b9d;
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif; /* Change this to your desired font */
+}
+
+
+/* Biodata content styling */
+section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #555;
+}
+
+/* Highlight important details */
+section .highlight {
+    font-weight: bold;
+    color: #1d3557;
+}
+
+/* Add spacing for better readability */
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+section ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Image styling */
+section img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+	
+    nav a {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}
